@@ -35,16 +35,16 @@ while True:
         return a / b
 
     match operator_value:
-        case 1:
+        case '1':
             output = addition(value_1, value_2)
             print('Addition :: {} + {} = {}'.format(value_1, value_2, output))
-        case 2:
+        case '2':
             output = substraction(value_1, value_2)
             print('substraction :: {} - {} = {}'.format(value_1, value_2, output))
-        case 3:
+        case '3':
             output = multiplication(value_1, value_2)
             print('multiplication :: {} * {} = {}'.format(value_1, value_2, output))
-        case 4:
+        case '4':
             if value_2 == 0:
                 print("The value of divident cannot be zero")
                 continue
