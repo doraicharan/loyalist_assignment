@@ -15,8 +15,8 @@ while True:
      except ValueError:
         print("Oops!  That was no valid number.  Try again...")
 
-    print("For addition select 1\n For subtraction select 2\n \
-        For multiplication select 3\n For division select 4")
+    print("For addition select 1\nFor subtraction select 2\n \
+        For multiplication select 3\n For division select 4")  # formatting should be improved
         
     while True:
         operator_value = input("Enter the value of your desired operation: ")
