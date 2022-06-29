@@ -22,6 +22,8 @@ while True:
         operator_value = input("Enter the value of your desired operation: ")
         if operator_value not in ['1', '2', '3', '4']:
             print("You have entered invalid input. Try again")
+        else:
+            break
 
     def addition(a,b):
         return a+b 
@@ -29,6 +31,9 @@ while True:
         return a-b               
     def multiplication(a,b):
         return a*b
+    def division(a, b):
+        return a / b
+
     match operator_value:
         case 1:
             output = addition(value_1, value_2)
@@ -40,7 +45,11 @@ while True:
             output = multiplication(value_1, value_2)
             print('multiplication :: {} * {} = {}'.format(value_1, value_2, output))
         case 4:
-            pass
+            if value_2 == 0:
+                print("The value of divident cannot be zero")
+                continue
+            output = division(value_1, value_2)
+            print('division :: {} / {} = {}'.format(value_1, value_2, output))
 
     exit_value = input("Do you want to exit the program y/n: ")
     if exit_value in ['y','Y']:
