@@ -27,7 +27,8 @@ while True:
         return a+b 
     def substraction(a,b):
         return a-b               
-    
+    def multiplication(a,b):
+        return a*b
     match operator_value:
         case 1:
             output = addition(value_1, value_2)
@@ -36,7 +37,8 @@ while True:
             output = substraction(value_1, value_2)
             print('substraction :: {} - {} = {}'.format(value_1, value_2, output))
         case 3:
-            pass
+            output = multiplication(value_1, value_2)
+            print('multiplication :: {} * {} = {}'.format(value_1, value_2, output))
         case 4:
             pass
 
