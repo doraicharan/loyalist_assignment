@@ -1,3 +1,1 @@
-print("venky")
-print("saichand")
-print("newline")
+print("reset")
