@@ -1,2 +1,1 @@
 print("reset")
-print("sss")
